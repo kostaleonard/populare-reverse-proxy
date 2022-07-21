@@ -10,3 +10,7 @@ docker_push:
 	@echo Pushing $(VERSION) and latest
 	docker push kostaleonard/populare-reverse-proxy:latest
 	docker push kostaleonard/populare-reverse-proxy:$(VERSION)
+
+docker_run:
+	@echo Running $(VERSION)
+	docker run kostaleonard/populare-reverse-proxy:$(VERSION)
